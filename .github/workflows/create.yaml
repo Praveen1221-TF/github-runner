@@ -29,9 +29,9 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Terraform Init
-        working-directory: ./.github/workflows
+        working-directory: ./terraform
         run: terraform init
 
       - name: Terraform Plan
-        working-directory: ./.github/workflows
+        working-directory: ./terraform
         run: terraform plan
